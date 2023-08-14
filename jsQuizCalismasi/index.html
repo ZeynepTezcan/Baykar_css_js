@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <div id="quiz">
+        <div class="questions">
+            <div style="display: flex;justify-content: center;">
+           <h1 id="id"></h1>
+            <h2 id="question">Buraya soru gelicek</h2>
+        </div>
+            <ul>
+                <li>
+                    <input type="radio" name="choice" id="choiceA"  class="choice" disabled>
+                    <label for="choiceA" id="labelA"> A Seçeneği bölüm</label>
+                </li>
+                <li>
+                    <input type="radio" name="choice" id="choiceB"  class="choice" disabled>
+                    <label for="choiceB" id="labelB"> B Seçeneği bölüm</label>
+                </li>
+                <li>
+                    <input type="radio" name="choice" id="choiceC"  class="choice" disabled>
+                    <label for="choiceC" id="labelC"> C Seçeneği bölüm</label>
+                </li>
+                <li>
+                    <input type="radio" name="choice" id="choiceD"  class="choice" disabled>
+                    <label for="choiceD" id="labelD"> D Seçeneği bölüm</label>
+                </li>
+            </ul>
+        </div>
+        <div style="display: flex; justify-content: space-between;">
+                <button  style="padding: 20px;" id="sendButton">GÖNDER</button>
+        <div class="time">
+        <div class="timer" id="timer">30</div>
+       </div>
+
+    </div>
+    </div>
+    <div id="results" style="display: none;">
+        <h2>Sınav Sonuçları</h2>
+        <table id="result-table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Sorular</th>
+                    <th>Seçilen Cevaplar</th>
+                </tr>
+            </thead>
+            <tbody style="text-transform: capitalize;"></tbody>
+        </table>
+    </div>
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
